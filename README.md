@@ -9,3 +9,4 @@ A R-package for meta data query of [PRIDE](http://www.ebi.ac.uk/pride/archive/) 
     - [Protein](http://www.ebi.ac.uk/pride/ws/archive/#!/protein)
     - [Peptide](http://www.ebi.ac.uk/pride/ws/archive/#!/peptide)
 - Create a database
+- Content checker
