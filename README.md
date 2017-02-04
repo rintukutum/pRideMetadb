@@ -8,5 +8,15 @@ A R-package for meta data query of [PRIDE](http://www.ebi.ac.uk/pride/archive/) 
     - [File](http://www.ebi.ac.uk/pride/ws/archive/#!/file)
     - [Protein](http://www.ebi.ac.uk/pride/ws/archive/#!/protein)
     - [Peptide](http://www.ebi.ac.uk/pride/ws/archive/#!/peptide)
-- Create a database
+- Create a SQLite3 database
+- Use [graphql](https://github.com/rintukutum/graphql) package in R to query the database
 - Content checker
+
+## resources
+- [Introduction to GraphQL](http://graphql.org/learn/)
+- [Building a GraphQL Server with Node.js and SQL](https://www.reindex.io/blog/building-a-graphql-server-with-node-js-and-sql/)
+- [A GraphQL API created by reflection over a PostgreSQL schema](https://github.com/calebmer/postgraphql)
+- [GraphQL server for Express, Connect, Hapi and Koa](https://github.com/apollographql/graphql-server)
+- [awesome-graphql](https://github.com/rintukutum/awesome-graphql)
+
+
