@@ -49,11 +49,11 @@ getProjectList <- function(term = NULL,	# string
 	# "http://www.ebi.ac.uk:80/pride/ws/archive/project/list?show=100&page=0&order=desc"
 	link <- "http://www.ebi.ac.uk:80/pride/ws/archive/project/list?"
 	queryLink <- paste0(link,
-						'show=', resultsPerPage,
-						'&',
-						'page=', page,
-						'&',
-						'order=', order)
+		'show=', resultsPerPage,
+		'&',
+		'page=', page,
+		'&',
+		'order=', order)
 	projectList <- connectionStatus(GET(queryLink))[[1]]
 	return(projectList)
 }
