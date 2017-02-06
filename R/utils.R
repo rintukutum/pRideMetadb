@@ -1,6 +1,6 @@
 content2df <- function(content.pride){
 	df.pride <- data.frame(accession= content.pride$accession,
-species = pleural2single(content.pride$species),
+	species = pleural2single(content.pride$species),
 	tissues = pleural2single(content.pride$tissues),
 	title = content.pride$title,
 	otherOmicsLink = content.pride$otherOmicsLink,
