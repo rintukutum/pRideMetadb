@@ -2,7 +2,7 @@
 A R-package for meta data query of [PRIDE](http://www.ebi.ac.uk/pride/archive/) database. It provides detail status of PRIDE database for R-user. many useful functions to query PRIDE database.
 
 # Examples
-## getPrideProject function
+## getPrideProject()
 
 Load neccessary library and functions. [`pRide-api.R`](../R/pRide-api.R) contains all the major functions to retrieve required informations from PRIDE database. Additional helper functions are available in [`utils.R`](../R/utils.R) and [`zzz.R`](../R/zzz.R).
 ```{r}
@@ -34,7 +34,7 @@ names(pxd.data)
 #[27] "numIdentifiedSpectra"     "references"
 ```
 
-## getProjectList
+## getProjectList()
 Get projects available in PRIDE-database.
 ```{r}
 page1Results <- getProjectList(
@@ -44,7 +44,7 @@ page1Results <- getProjectList(
 # Respose >>>> "OK"
 ```
 
-## getProjectCount
+## getProjectCount()
 Get number of available projects in PRIDE-database. Many parameters are available to query PRIDE-database. By default, `getProjectCount` returns total numebr of PRIDE projects. 
 ```{r}
 getProjectCount()
@@ -54,7 +54,7 @@ getProjectCount()
 # [1] 3385
 ```
 
-## getAllPrideProject
+## getAllPrideProject()
 Get all PRIDE projects from PRDIE-database. Maximum results per page allowed is 500, by default it allows 100 result per page. It uses `getProjectList` function to retrieve projects page-wise.
 ```{r}
 #------------------
