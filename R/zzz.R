@@ -1,3 +1,28 @@
+#--------
+# Check for status and through necessary
+# errors and results
+connectionStatus <- function(resposeServer){
+	status <- resposeServer$status_code
+	if(status == 200){
+		cat('Respose >>>> "OK"\n')
+		queryContent <- content(resposeServer)
+		return(queryContent)
+	}
+	if(status == 401){
+		stop("Unauthorized content requested!\n")
+	}
+	if(status == 403){
+		stop("Forbidden content requested!\n")	
+	}
+	if(status == 404){
+		stop("Content requested was not found!\n")	
+	}
+}
+
+#-------
+# 
+# Beautification codes for content2df
+# PRIDE json results to data.frame
 pleural2single <- function(pleural){
 	if(length(pleural) != 0){
 		single <- paste(unlist(pleural), collapse=';')
@@ -24,3 +49,4 @@ null2na <- function(x){
 		return(x)
 	}
 }
+#-------
