@@ -4,7 +4,7 @@ A R-package for meta data query of [PRIDE](http://www.ebi.ac.uk/pride/archive/) 
 # Examples
 ## getPrideProject function
 
-Load neccessary library and functions. [`pRide-api.R`](./R/pRide-api.R) contains all the major functions to retrieve required informations from PRIDE database. Additional helper functions are available in `utils.R` and `zzz.R`.
+Load neccessary library and functions. [`pRide-api.R`](../R/pRide-api.R) contains all the major functions to retrieve required informations from PRIDE database. Additional helper functions are available in [`utils.R`](../R/utils.R) and [`zzz.R`](../R/zzz.R).
 ```{r}
 # remove all existing variables from R-workspace
 rm(list=ls())
