@@ -13,7 +13,7 @@ A R-package for meta data query of [PRIDE](http://www.ebi.ac.uk/pride/archive/) 
 
 ## DONE
 - S3 functions available
-    +  [getPrideProject](./R/getProject.R)
-    +  [getProjectList](./R/getProject.R)
-    +  [getProjectCount](./R/getProject.R)
-    +  [getAllPrideProject](./R/getProject.R)
+    +  [getPrideProject](./R/pRide-api.R)
+    +  [getProjectList](./R/pRide-api.R)
+    +  [getProjectCount](./R/pRide-api.R)
+    +  [getAllPrideProject](./R/pRide-api.R)
