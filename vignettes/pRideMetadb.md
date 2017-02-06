@@ -102,7 +102,7 @@ save(allPrideProjects, file = './data/allPrideProjects.rda')
 ```
 
 ## Status and visualization of PRIDE projects
-Let us now visualize our downloaded data set `allPrideProjects.rda`. Status of submission types in PRIDE database.![png](./vignettes/pride-submissionType.png.png)
+Let us now visualize our downloaded data set `allPrideProjects.rda`. Status of submission types in PRIDE database.![png](./pride-submissionType.png)
 
 ```{r}
 load('./data/allPrideProjects.rda')
