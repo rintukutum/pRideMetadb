@@ -73,6 +73,8 @@ getProjectCount <- function(query = NULL,
 	# http://www.ebi.ac.uk:80/pride/ws/archive/project/count
 	baseURL <- "http://www.ebi.ac.uk:80/pride/ws/archive/project/count"
 	count <- connectionStatus(GET(baseURL))
+	cat(paste0(Sys.time(),'\n'))
+	cat(paste0('Number of PRIDE projects = ',count,'\n'))
 	return(count)
 }
 #------------
@@ -104,6 +106,8 @@ getAllPrideProject <- function(resultsPerPage = 100){
 	for(i in 1:length(projectPerPage)){
 		allProjects <- append(allProjects, projectPerPage[[i]])
 	}
+	cat(paste0(Sys.time(),'\n'))
+	cat(paste0('Number of PRIDE projects downloaded = ',count,'\n'))
 	return(allProjects)
 }
 #-----------

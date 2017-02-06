@@ -1,7 +1,10 @@
 # pRideMetadb
 A R-package for meta data query of [PRIDE](http://www.ebi.ac.uk/pride/archive/) database.
 
-## TODO 
+## Introduction
+Introduction to this R-package is available in [vignettes](../vignettes/pRideMetadb.md). 
+
+## TODO list
 - Create S3 functions using PRIDE API
 - convert S3 to S4 Class to Query PRIDE database
     + [Project](http://www.ebi.ac.uk/pride/ws/archive/#!/project)

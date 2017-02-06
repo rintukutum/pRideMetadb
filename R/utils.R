@@ -45,3 +45,29 @@ content2df <- function(content.pride){
 	)
 	return(df.pride)
 }
+#-------
+# getAllPrideProject helper function
+# convert list to data.frame format
+prideMiniList2DF <- function(prideMiniList){
+	prideMiniDF <- data.frame(
+		accession = prideMiniList$accession,
+		title = prideMiniList$title,
+		projectDescription = null2na(prideMiniList$projectDescription),
+		publicationDate = prideMiniList$publicationDate,
+		submissionType = prideMiniList$submissionType,
+		numAssays = prideMiniList$numAssays,
+		species = pleural2single(prideMiniList$species),
+		tissues = pleural2single(prideMiniList$tissues),
+		ptmNames = pleural2single(prideMiniList$ptmNames),
+		instrumentNames = pleural2single(prideMiniList$instrumentNames),
+		projectTags = pleural2single(prideMiniList$projectTags),
+		stringsAsFactors =FALSE
+	)
+	return(prideMiniDF)
+}
+#------
+# prideAllList2DF
+prideAllList2DF <- function(prideAllList){
+	prideList <- lapply(prideAllList,prideMiniList2DF)
+	prideDF <- plyr::ldply(prideList)
+}
