@@ -11,21 +11,21 @@ getPrideProject <- function(pxd){
 }
 
 getProjectList <- function(term = NULL,	# string
-						   resultsPerPage = 100,	# integer
-						   page = 0,	# integer
-						   sort = NULL,	# string "score", "publication_date",
-						   				# id, project_title
-						   order = TRUE,	# string; sorting order asc (ascending) or desc(descending)
-						   taxonID = NULL,	# array[string]; NCBI taxon ID, 9606 for human
-						   ptmsFilter = NULL,	# array[string]; PTM annotation phosphorylation
-						   tissueFilter = NULL,	# array[string]; tissue annotation, brain
-						   diseaseFilter = NULL,	# array[string]; disease annotation
-						   titleFilter = NULL,	# array[string]; the title for keywords, "stress"
-						   instrumentFilter = NULL, # array[string]; instrument names or keywords 
-						   experimentTypeFilter = NULL,	# array[string]; experiment type, shotgun
-						   quantificationFilter = NULL,	# array[string]; quantification annotation, "label-free"
-						   projectTagFilter = NULL	# array[string]; project tags, "Biomedical"
-						   ){
+	resultsPerPage = 100,	# integer
+	page = 0,	# integer
+	sort = NULL,	# string "score", "publication_date",
+	  				# id, project_title
+	order = TRUE,	# string; sorting order asc (ascending) or desc(descending)
+	taxonID = NULL,	# array[string]; NCBI taxon ID, 9606 for human
+	ptmsFilter = NULL,	# array[string]; PTM annotation phosphorylation
+	tissueFilter = NULL,	# array[string]; tissue annotation, brain
+	diseaseFilter = NULL,	# array[string]; disease annotation
+	titleFilter = NULL,	# array[string]; the title for keywords, "stress"
+	instrumentFilter = NULL, # array[string]; instrument names or keywords 
+	experimentTypeFilter = NULL,	# array[string]; experiment type, shotgun
+	quantificationFilter = NULL,	# array[string]; quantification annotation, "label-free"
+	projectTagFilter = NULL	# array[string]; project tags, "Biomedical"
+	){
 	# term
 	if(is.null(term)){
 		term <- ""
@@ -60,15 +60,15 @@ getProjectList <- function(term = NULL,	# string
 #------------
 # Projects available at PRIDE database
 getProjectCount <- function(query = NULL,
-							speciesFilter = NULL,
-							ptmsFilter = NULL,
-							tissueFilter = NULL,
-							diseaseFilter = NULL,
-							titleFilter = NULL,
-							instrumentFilter = NULL,
-							experimentTypeFilter = NULL,
-							quantificationFilter = NULL,
-							projectTagFilter = NULL){
+	speciesFilter = NULL,
+	ptmsFilter = NULL,
+	tissueFilter = NULL,
+	diseaseFilter = NULL,
+	titleFilter = NULL,
+	instrumentFilter = NULL,
+	experimentTypeFilter = NULL,
+	quantificationFilter = NULL,
+	projectTagFilter = NULL){
 	# base url 
 	# http://www.ebi.ac.uk:80/pride/ws/archive/project/count
 	baseURL <- "http://www.ebi.ac.uk:80/pride/ws/archive/project/count"
